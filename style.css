@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Shantell Sans', cursive;
+    background-color: #3818c8;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: #fff;
+}
+
+.box{
+    height:240px;
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.celula{
+    height: 80px;
+    width: 80px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#telaVencedor{
+    color: #fff;
+    display: none;
+    position: absolute;
+    background-color: #12015b;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    text-align: center;
+
+}
+
+#telaVencedor span {
+    color: gold;
+}
+
+    /* Bordas  */
+
+.p0, .p3, .p6 {
+    border-left: none;
+}
+    
+.p0, .p1, .p2 {
+    border-top: none;
+}
+    
+.p2, .p5, .p8 {
+    border-right: none;
+}
+    
+.p6, .p7, .p8 {
+    border-bottom: none;
+}
